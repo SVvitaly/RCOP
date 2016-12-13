@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <head>
+    <!--[if lte IE 8]><%= stylesheet_link_tag "html5shiv" %></script><![endif]-->
+    <!--[if lte IE 8]><%= stylesheet_link_tag "ie8" %><![endif]-->
+    <%= render "/refinery/head" %>
+  </head>
+  <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
+    <%= site_bar -%>
+    <div id="page_container">
+      <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
+      <section id="page">
+        <%= yield %>
+      </section>
+      <footer>
+        <%= render "/refinery/footer" -%>
+      </footer>
+    </div>
+    <!--[if lte IE 8]><%= javascript_tag('ie/respond') %></script><![endif]-->
+        <%= render "/refinery/javascripts" %>
+  </body>
+</html>
