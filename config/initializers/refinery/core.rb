@@ -27,8 +27,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  config.site_name = "Учреждение «Республиканский центр олимпийской подготовки по гребным 
-видам спорта»"
+  config.site_name = 'Establishment of "National Center of Olympic training for rowing"'
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to

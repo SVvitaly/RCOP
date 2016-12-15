@@ -9,9 +9,15 @@
   <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
     <%= site_bar -%>
     <div id="page_container">
-      <header id="header">
-        <%= render "/refinery/header" -%>
-      </header>
+      <% if controller_name == 'pages' && action_name == 'home' %>
+        <header id="header">
+          <%= render "/refinery/header" -%>
+        </header>
+          <% else %>
+        <header id="header">
+          <%= render "/refinery/headerAll" -%>
+        </header>
+      <% end %>
       <section id="page">
         <%= yield %>
       </section>
