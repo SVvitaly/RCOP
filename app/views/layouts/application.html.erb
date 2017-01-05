@@ -4,20 +4,14 @@
   <head>
     <!--[if lte IE 8]><%= stylesheet_link_tag "html5shiv" %></script><![endif]-->
     <!--[if lte IE 8]><%= stylesheet_link_tag "ie8" %><![endif]-->
-    <%= render "/refinery/head" %>
+    <!-- <%= render "/refinery/head" %> -->
   </head>
   <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
     <%= site_bar -%>
     <div id="page_container">
-      <% if controller_name == 'pages' && action_name == 'home' %>
-        <header id="header">
-          <%= render "/refinery/header" -%>
-        </header>
-          <% else %>
-        <header id="header">
-          <%= render "/refinery/headerAll" -%>
-        </header>
-      <% end %>
+      <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
       <section id="page">
         <%= yield %>
       </section>
