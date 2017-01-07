@@ -55,7 +55,7 @@ Refinery::Pages.configure do |config|
   # Use these if you want to use layout or view templates whose filenames do not match the default pattern
   # For more information on the patterns see Dir.glob (http://ruby-doc.org/core-2.2.0/Dir.html#method-c-glob)
   # example: for .erb, .html and .rb view templates use
-  #         config.view_templates_pattern = 'app', 'views', '{pages,refinery/pages}', '*.{erb,html,rb}'
+  # config.view_templates_pattern = 'app', 'views', '{pages,refinery/pages}', '*.{erb,html,rb}'
 
   # config.layout_templates_pattern = 'app', 'views', '{layouts,refinery/layouts}', '*html*'
   # config.view_templates_pattern = 'app', 'views', '{pages,refinery/pages}', '*html*'
@@ -63,6 +63,8 @@ Refinery::Pages.configure do |config|
   # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 
   # config.absolute_page_links = false
+   config.view_template_whitelist = ["home", "show", "new"]
+  # config.use_view_templates = false
 
   config.show_title_in_body = false
 

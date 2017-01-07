@@ -5,6 +5,7 @@
     <!--[if lte IE 8]><%= stylesheet_link_tag "html5shiv" %></script><![endif]-->
     <!--[if lte IE 8]><%= stylesheet_link_tag "ie8" %><![endif]-->
     <!-- <%= render "/refinery/head" %> -->
+    <%= render "/refinery/javascripts" %>
   </head>
   <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
     <%= site_bar -%>
@@ -20,6 +21,5 @@
       </footer>
     </div>
     <!--[if lte IE 8]><%= javascript_tag('ie/respond') %></script><![endif]-->
-        <%= render "/refinery/javascripts" %>
   </body>
 </html>
