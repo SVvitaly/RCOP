@@ -1,11 +1,9 @@
 <!-- Header -->
 <div>
-  <!-- Inner -->
-  <div class="inner">
-    <header>
-      <h1><a href="/" id="logo">Establishment of "National Center of Olympic training for rowing"</a></h1>
-    </header>
-  </div>
-  <!-- Nav -->
+  <header>
+      <h1><a href="/" id="logo1">Establishment of "National Center of Olympic training for rowing"</a></h1>
+  </header>
+</div>
+<div class="layer1">
   <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap{|p| p.dom_id = 'nav'}.to_html %>
 </div>

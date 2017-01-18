@@ -63,8 +63,8 @@ Refinery::Pages.configure do |config|
   # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 
   # config.absolute_page_links = false
-   config.view_template_whitelist = ["home", "show", "new"]
-  # config.use_view_templates = false
+
+  config.use_view_templates = false
 
   config.show_title_in_body = false
 

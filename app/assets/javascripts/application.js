@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.cross-slide
 //= require turbolinks
 //= require jquery.dropotron.min
 //= require jquery.scrolly.min

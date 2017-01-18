@@ -4,7 +4,7 @@
 <head>
   <!--[if lte IE 8]><%= stylesheet_link_tag "html5shiv" %></script><![endif]-->
   <!--[if lte IE 8]><%= stylesheet_link_tag "ie8" %><![endif]-->
-  <!-- <%= render "/refinery/head" %> -->
+  <%= render "/refinery/head" %>
   <%= render "/refinery/javascripts" %>
   <script type="text/javascript" src="/fancyBox/jquery.mousewheel-3.0.6.pack.js"></script>
   <script type="text/javascript" src="/fancyBox/jquery.fancybox.pack.js"></script>
@@ -22,19 +22,19 @@
       });
   </script>
 </head>
-<body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
+<body >
 <%= site_bar -%>
-<div id="page_container">
-  <header id="header">
-    <%= render "/refinery/header" -%>
-  </header>
-  <section id="page">
-    <%= yield %>
-  </section>
-  <footer>
-    <%= render "/refinery/footer" -%>
-  </footer>
-</div>
+  <div id="page_container">
+    <header id="header1" class="demo-2">
+      <%= render "/refinery/header" -%>
+    </header>
+    <section id="page">
+      <%= yield %>
+    </section>
+    <footer>
+      <%= render "/refinery/footer" -%>
+    </footer>
+  </div>
 <!--[if lte IE 8]><%= javascript_tag('ie/respond') %></script><![endif]-->
 </body>
 </html>
