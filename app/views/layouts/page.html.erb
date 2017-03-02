@@ -6,8 +6,14 @@
   <!--[if lte IE 8]><%= stylesheet_link_tag "ie8" %><![endif]-->
   <%= render "/refinery/head" %>
   <%= render "/refinery/javascripts" %>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
   <script type="text/javascript" src="/fancyBox/jquery.mousewheel-3.0.6.pack.js"></script>
   <script type="text/javascript" src="/fancyBox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/mycarousel/myCarousel.js"></script>
   <link rel="stylesheet" type="text/css" href="/fancyBox/jquery.fancybox.css" media="screen" />
   <script type="text/javascript">
       $(document).ready(function(){
@@ -21,11 +27,21 @@
           });
       });
   </script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('.container1').myCarousel({
+              btnNext: '.next',
+              btnPrev: '.prev',
+              visible: 5,
+              rotateBy: 1
+          });
+      });
+  </script>
 </head>
 <body >
 <%= site_bar -%>
   <div id="page_container">
-    <header id="header1" class="demo-2">
+    <header id="header1">
       <%= render "/refinery/header" -%>
     </header>
     <section id="page">
