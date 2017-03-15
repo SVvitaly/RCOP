@@ -4,8 +4,8 @@
             visible: 3,
             rotateBy: 1,
             speed: 300,
-            btnNext: null,
-            btnPrev: null,
+            btnNext: true,
+            btnPrev: true,
             auto: 4000,
             backSlide: false
         };

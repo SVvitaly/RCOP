@@ -1,6 +1,6 @@
 <!-- Header -->
 <div class="demo-2 backgroundfon">
-  <nav style="margin-left: 95%; font-size: 16px; position: static;">
+  <nav class="localeposition ">
     <% ::Refinery::I18n.frontend_locales.each do |locale| %>
         <%= link_to locale, {:locale => locale}, class: locale %>
     <% end %>
@@ -8,12 +8,11 @@
   <header >
     <div>
       <a class="bordernone headerEmblema" href="<%= t('home') %>" ><img class="headerEmblemaimg" src="/images/Emblema.png" /></a>
-      <h1><a class="bordernone" href="/" id="logo1">
-        <%= t('header_text') %>
-      </a></h1>
+      <h1 style="padding-top: 1%"><a  class="bordernone deepshadow" href="/" id="logo1">
+        <%= t('header_text') %></a></h1>
     </div>
-    <div style="font-size: 20px;" class="layer1">
-      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap{|p| p.dom_id = 'nav'}.to_html %>
+    <div class="textBold" >
+      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap{|p| p.dom_id = 'nav'}.to_html  %>
     </div>
   </header>
 </div>
