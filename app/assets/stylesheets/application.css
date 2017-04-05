@@ -250,7 +250,7 @@ body {
 }
 
 #header1 {
-    margin: 5% 0%;
+    margin-butom: 5%;
     color: #fff;
     text-align: center;
 }
@@ -319,11 +319,12 @@ footer  h3{
 }
 
 .otside{
-    margin: 1% 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .icons{
     background: #a9cbf1;
+
 }
 
 ul.icons {
@@ -331,17 +332,64 @@ ul.icons {
     background: rgba(128, 128, 128, 0.05);
     border-radius: 4em;
     display: inline-block;
-    padding: 0.15em 0.55em 0.15em 0.55em;
+    padding: 0em 0em 0em 0em;
     font-size: 1.25em;
     cursor: default;
+    color: #0f8ad3;
+    font-size: 2em;
+    margin-bottom: 0%;
+    padding-left: 0%;
 }
 
+ul.icons li a {
+    display: inline-block;
+    background: none;
+    width: 2.5em;
+    height: 0em;
+    line-height: 0em;
+    text-align: center;
+    border-radius: 100%;
+    border: 0;
+    color: inherit;
+}
 
 
 /*TEXTS*/
 
 .center-text{
     text-align: center;
+}
+
+.Honhomege{
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 1%;
+    color: #2f2ef1;
+    text-shadow: 0px 3px 0px #b2a98f,
+                0px 14px 10px rgba(0,0,0,0.15),
+                /*0px 24px 2px rgba(0,0,0,0.1),*/
+                0px 34px 30px rgba(0,0,0,0.1);
+
+}
+.Honhomege a {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+.phototext{
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 1%;
+    color: #2f2ef1;
+    /*text-shadow: 0px 3px 0px #b2a98f,*/
+    /*0px 14px 10px rgba(0,0,0,0.15),*/
+        /*0px 24px 2px rgba(0,0,0,0.1),*/
+    0px 34px 30px rgba(0,0,0,0.1);
+
 }
 
 .text-kursiv{
@@ -464,9 +512,19 @@ ul.icons {
 
 
 
+.image.featured {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 0;
+}
 
 
 
+/*карусель фотоархива*/
+
+.widthphotocarousel{
+    width: 200px;
+}
 
 
 /* Gallery */
@@ -1005,6 +1063,9 @@ div.bloksportsmen:after {
 
 /* carousel основная на главной странице*/
 
+.carouselbuttom {
+    margin-bottom: 0;
+}
 .carousel {
     position: relative;
     overflow: hidden;
@@ -1085,7 +1146,7 @@ div.bloksportsmen:after {
     white-space: nowrap;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    padding: 0 2em 0 2em;
+    padding: 0 0em 0 0em;
 }
 
 .carousel article {
@@ -1093,7 +1154,7 @@ div.bloksportsmen:after {
     width: 18em;
     background: #fff;
     text-align: center;
-    padding: 0 1em 3em 1em;
+    padding: 0 1% 3% 1%;
     margin: 0 2em 0 0;
     white-space: normal;
     opacity: 1.0;
@@ -1114,24 +1175,16 @@ div.bloksportsmen:after {
     top: 0;
     width: auto;
     margin-right: -2em;
-    margin-bottom: 3em;
+    margin-bottom: 0em;
 }
 
 .carousel article p {
     text-align: center;
 }
 
-#caroselArticleNews {
-    background-color: transparent;
-    width: 32%
-}
-
-.en{
-
-}
-
-.ru{
-
+.wrapper {
+    margin: 0 0 0em 0;
+    padding: 0em 0 0em 0;
 }
 
 
@@ -1164,8 +1217,8 @@ div.bloksportsmen:after {
 }
 
 .popup-content {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     position: absolute;
     z-index: 2;
     top: 0;
@@ -1184,7 +1237,7 @@ div.bloksportsmen:after {
 .popup-shower {
     color: #00f;
     cursor: pointer;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .popup-shower:hover {
@@ -1219,30 +1272,202 @@ div.bloksportsmen:after {
 }
 
 /*Размещение внутри модального окна*/
-.modalwindowinside{
+.modalwindowinsideall{
+    width: 100%;
+    height: auto;
+}
+.modalwindowinside {
+    display: inline-block;
     width: 30%;
     height: auto;
     float: left;
 }
 
+.modalwindowinside p {
+    font-family: 'OpenSans-Semibold';
+    margin: 0 0 0 0;
+
+}
+
 .modalwindowinsideimg{
     position: inherit;
     width: 100%;
+    height: 95%;
+    margin-bottom: 2%;
 }
 
 .modalwindowinsidetext{
     font-size: 20px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+
+
+}
+.modalwindowinsidetext p {
+    font-family: 'OpenSans-Semibold';
+    margin: 0 0 0 0;
+
+}
+
+.modalwindowinsidetext1{
+    font-size: 20px;
+
+    display: inline-block;
+    width: 40%;
+    float: right;
+    vertical-align: top;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+.modalwindowinsidetext1 p {
+    font-family: 'OpenSans-Semibold';
+    margin: 0 0 0 0;
+
+}
+.modalwindowinsidetext3{
+    font-size: 20px;
+
+    display: inline-block;
+    width: 70%;
+    float: right;
+    vertical-align: top;
     text-align: center;
-    /*position: absolute;*/
-    width: 50%;
-    margin-left: 50%;
+    font-weight: bold;
+
+}
+
+.modalwindowinsidetext3 p {
+    padding-left: 10%;
+    font-family: 'OpenSans-Semibold';
+
+
+}
+
+.blockleadership{
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    font-family: 'OpenSans-Semibold';
+}
+
+.blockleadership p {
+    font-family: 'OpenSans-Semibold';
+}
+.modalwindowinsidetextleadership1{
+    font-size: 20px;
+
+    display: inline-block;
+    width: 60%;
+    float: right;
+    vertical-align: top;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+.modalwindowinsidetextleadership1 p {
+    font-family: 'OpenSans-Semibold';
+    margin: 0 0 0 0;
+
+}
+
+.modalwindowinsidetextleadership{
+    font-size: 20px;
+    padding-left: 0.5%;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    text-align: left;
+
+
+}
+.modalwindowinsidetextleadership p {
+    font-family: 'OpenSans-Semibold';
+    margin: 0 0 0 0;
+
+}
+
+/*.col1{*/
+    /*width: 10%;*/
+    /*margin-left: 3%;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.col2{*/
+    /*width: 40%;*/
+    /*margin-left: 3%;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+/*}*/
+/*.col3{*/
+    /*width: 15%;*/
+    /*margin-left: 3%;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+/*}*/
+
+
+
+
+
+
+.headerlocale{
+    position: relative;
+    width: 100%;
+    /*background-color: #0000aa;*/
+    /*opacity: 0.5;*/
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+    margin-bottom: 0em;
+    line-height: 1;
+    margin-bottom: 1%;
 }
 
 .localeposition{
-    margin-left: 95%;
-    font-size: 16px;
-    position: static;
+    opacity: 1;
+    width: 100%;
+    text-align: left;
+    display: inline;
 }
+.en{
+    /*text-shadow: -1px -1px 0 #0f8ad3, 1px -1px 0 #0f8ad3, -1px 1px 0 #0f8ad3, 1px 1px 0 #0f8ad3;*/
+    font-weight: 700;
+    color: #0f8ad3;
+    font-size: 3em;
+    font-family: 'OpenSans-Semibold';
+    text-transform: uppercase;
+    padding-right: 1%;
+    text-align: left;
+    opacity: 1;
+}
+
+.ru{
+    /*text-shadow: -0px -0px 0 #0f8ad3, 0px -0px 0 #0f8ad3, -0px 0px 0 #0f8ad3, 0px 0px 0 #0f8ad3;*/
+    font-weight: 700;
+    color: #0f8ad3;
+    font-size: 3em;
+    font-family: 'OpenSans-Semibold';
+    text-transform: uppercase;
+    text-align: left;
+    opacity: 1;
+}
+
+/*услуги на основной*/
+.photoservise{
+    width: 40%;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
 /*расположение на странице руководителей*/
 .leadershipB{
     width: 100%;
@@ -1273,13 +1498,16 @@ div.bloksportsmen:after {
 
 .leadershipBp {
     vertical-align: top;
+    text-align: left;
     position: inherit;
     font-size: 20px;
     font-weight: 500;
     /*text-align: left;*/
     width: 100%;
-    padding-left: 40%;
+    padding-left: 20%;
     padding-right: 2%;
+    text-decoration: none;
+    border: none;
 }
 
 .leadershipBp16{

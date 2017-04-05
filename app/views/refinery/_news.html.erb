@@ -1,0 +1,13 @@
+<% @items = Refinery::News::Item.latest %>
+<header>
+  <h2 class="Honhomege">
+    <%= t('news') %>
+  </h2>
+</header>
+<div id="ca-container" class="ca-container">
+  <div class="ca-wrapper">
+    <% @items.each do |item| %>
+        <%= item.body.html_safe if item.body.present? %>
+    <% end %>
+  </div>
+</div>

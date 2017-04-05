@@ -1,18 +1,30 @@
 <!-- Header -->
+<div class="headerlocale">
+  <!--<div class="localeposition">-->
+  <div>
+    <nav class="localeposition">
+      <% ::Refinery::I18n.frontend_locales.each do |locale| %>
+          <%= link_to locale, refinery.url_for({locale: locale}), class: locale %>
+      <% end %>
+    </nav>
+  <!--</div>-->
+  <!--<div>-->
+    <ul class="icons otside">
+    <li><a href="https://www.facebook.com/zaslavlrowingcanal/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+    <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+    <!--<li><a href="#" class="icon fa-vk"><span class="label">Vkontakte</span></a></li>-->
+    </ul>
+  </div>
+</div>
 <div class="demo-2 backgroundfon">
-  <nav class="localeposition ">
-    <% ::Refinery::I18n.frontend_locales.each do |locale| %>
-        <%= link_to locale, {:locale => locale}, class: locale %>
-    <% end %>
-  </nav>
-  <header >
+  <header>
     <div>
-      <a class="bordernone headerEmblema" href="<%= t('home') %>" ><img class="headerEmblemaimg" src="/images/Emblema.png" /></a>
-      <h1 style="padding-top: 1%"><a  class="bordernone deepshadow" href="/" id="logo1">
+      <a class="bordernone headerEmblema" href="<%= t('home') %>"><img class="headerEmblemaimg" src="/images/Emblema.png"/></a>
+      <h1 style="padding-top: 1%"><a class="bordernone deepshadow" href="/" id="logo1">
         <%= t('header_text') %></a></h1>
     </div>
-    <div class="textBold" >
-      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap{|p| p.dom_id = 'nav'}.to_html  %>
+    <div class="textBold">
+      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap { |p| p.dom_id = 'nav' }.to_html %>
     </div>
   </header>
 </div>
