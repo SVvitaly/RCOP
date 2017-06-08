@@ -495,6 +495,7 @@ ul.icons li a {
     /*margin-bottom: 20px;*/
     /*font-size: 35px;*/
 }
+
 .text-reading1{
     color: black;
     font-weight: 100;
@@ -503,6 +504,7 @@ ul.icons li a {
     font-size: 25px;
     padding: 5% 5% 0 5%;
 }
+
 /*.deepshadow {*/
     /*color: #131313;*/
     /*background-color: #e7e5e4;*/
@@ -1583,10 +1585,6 @@ div.bloksportsmen:after {
 /*}*/
 
 
-
-
-
-
 .headerlocale{
     position: relative;
     width: 100%;
@@ -1607,6 +1605,7 @@ div.bloksportsmen:after {
     text-align: left;
     display: inline;
 }
+
 .en{
     /*text-shadow: -1px -1px 0 #0f8ad3, 1px -1px 0 #0f8ad3, -1px 1px 0 #0f8ad3, 1px 1px 0 #0f8ad3;*/
     font-weight: 700;
