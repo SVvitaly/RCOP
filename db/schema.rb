@@ -104,8 +104,8 @@ ActiveRecord::Schema.define(version: 20170323210725) do
     t.datetime "expiration_date"
     t.string   "source",          limit: 255
     t.string   "slug",            limit: 255
-    t.text     "short_title",     limit: 65535
-    t.string   "image",           limit: 255
+    t.string   "short_title",     limit: 255
+    t.string   "image_uid",       limit: 255
   end
 
   add_index "refinery_news_items", ["id"], name: "index_refinery_news_items_on_id", using: :btree

@@ -56,13 +56,15 @@
     letter-spacing: 2px;
     text-decoration: none;
     text-shadow:
-            -1px -1px 0 #4b3680,
-            1px -1px 0 #4b3680,
-            -1px 1px 0 #4b3680,
-            1px 1px 0 #4b3680;
+            /*-1px -1px 0 #4b3680,*/
+            /*1px -1px 0 #4b3680,*/
+            -1px 1px 0 #4b3680;
+            /*1px 1px 0 #4b3680;*/
     /*margin-bottom: 20px;*/
     /*font-size: 35px;*/
 }
+
+
 
 #header ul{
     font-size: 18px;
@@ -322,6 +324,11 @@ footer  h3{
     margin: 0 0 0 0;
 }
 
+.otside h3{
+    font-family: 'OpenSans-Semibold';
+    font-size: 20px;
+}
+
 .icons{
     background: #a9cbf1;
 
@@ -385,10 +392,11 @@ ul.icons li a {
     font-size: 16px;
     padding-top: 1%;
     color: #2f2ef1;
+    font-family: 'OpenSans-Semibold';
     /*text-shadow: 0px 3px 0px #b2a98f,*/
     /*0px 14px 10px rgba(0,0,0,0.15),*/
         /*0px 24px 2px rgba(0,0,0,0.1),*/
-    0px 34px 30px rgba(0,0,0,0.1);
+    /*0px 34px 30px rgba(0,0,0,0.1);*/
 
 }
 
@@ -403,9 +411,30 @@ ul.icons li a {
 .text-reading{
     color: black;
     font-weight: 100;
+    font-family: 'OpenSans-Semibold';
     /*font-family: 'Times', serif;*/
     text-align: center;
     font-size: 16px;
+    padding: 5px 5px;
+}
+
+.text-reading-services{
+    color: black;
+    font-weight: 100;
+    font-family: 'OpenSans-Semibold';
+    /*font-family: 'Times', serif;*/
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+.text-reading-services a{
+    color: #2b3fef;
+    font-weight: 100;
+    font-family: 'OpenSans-Semibold';
+    /*font-family: 'Times', serif;*/
+    text-align: center;
+    font-size: 20px;
     padding: 5px 5px;
 }
 
@@ -427,12 +456,14 @@ ul.icons li a {
     text-align: left;
 }
 
-
-
-
-
-
-
+.ca-content{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.ca-icon img{
+    height: auto;
+    width: auto;
+}
 .dva {
     position: relative;
 }
@@ -537,8 +568,38 @@ a.photo:hover img{
 }
 
 
+/*страница контактов*/
+.contact{
+    padding-top: 2%;
+    width:100%;
+}
+
+.contactleft{
+    width:45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contactridth{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'OpenSans-Semibold';
+    padding-left: 2%;
+}
+
+.contactridthbold{
+    font-family: 'OpenSans-Semibold';
+    font-weight: 700;
+
+}
 
 
+/*footer adres*/
+.footeradres{
+    font-size: 10px;
+}
 
 /*Карусель в footer*/
 
@@ -560,8 +621,31 @@ a.photo:hover img{
 
 
 
+/*Электронные ресурсы*/
 
+.resurse{
 
+    width: 100%;
+}
+
+.resurse1{
+    width: 30%;
+    display: inline-block;
+}
+
+.resurse2{
+    width: 60%;
+    font-family: 'OpenSans-Semibold';
+    padding-left: 2%;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+/*.resurse2 p {*/
+    /*font-family: 'OpenSans-Semibold';*/
+    /*size: 16px;*/
+/*}*/
 
 
 /* Images sportsmen */
@@ -742,36 +826,70 @@ div.blok8:after {
 
 .services{
     width: 100%;
+    font-family: 'OpenSans-Semibold';
     /*font-family: Helvetica;*/
     font-size: 20px;
 }
 
 .col1{
-    width: 10%;
-    margin-left: 3%;
-    text-align: center;
+    width: 3%;
+    font-family: 'OpenSans-Semibold';
+    text-align: left;
     display: inline-block;
 }
 
 .col2{
-    width: 40%;
-    margin-left: 3%;
-    text-align: center;
+    width: 35%;
+    font-family: 'OpenSans-Semibold';
+    text-align: left;
     display: inline-block;
 }
 .col3{
-    width: 15%;
-    margin-left: 3%;
-    text-align: center;
+    width: 8%;
+    font-family: 'OpenSans-Semibold';
+    text-align: left;
     display: inline-block;
 }
 .col4{
-    width: 15%;
-    margin-left: 3%;
-    text-align: center;
+    width: 8%;
+    font-family: 'OpenSans-Semibold';
+    text-align: left;
     display: inline-block;
 }
 
+.col5{
+    margin-bottom: 0.5%;
+    width: 25%;
+    height: 20%;
+    text-align: left;
+    display: inline-block;
+}
+
+
+.col5 image{
+    width: 100%;
+    height: 80%;
+}
+
+.col1 p{
+    text-align: left;
+    font-family: 'OpenSans-Semibold';
+}
+
+.col2 p{
+    text-align: left;
+    font-family: 'OpenSans-Semibold';
+}
+.col3 p{
+    text-align: left;
+    font-family: 'OpenSans-Semibold';
+}
+.col4 p{
+
+    text-align: left;
+    font-family: 'OpenSans-Semibold';
+
+}
 /* Основной блок */
 .owl-wrapper-outer {
     border: 1px solid #777;
@@ -1151,7 +1269,7 @@ div.bloksportsmen:after {
 
 .carousel article {
     display: inline-block;
-    width: 18em;
+    width: 22.5%;
     background: #fff;
     text-align: center;
     padding: 0 1% 3% 1%;
@@ -1180,6 +1298,8 @@ div.bloksportsmen:after {
 
 .carousel article p {
     text-align: center;
+    font-family: 'OpenSans-Semibold';
+    font-size: 16px;
 }
 
 .wrapper {
@@ -1217,8 +1337,8 @@ div.bloksportsmen:after {
 }
 
 .popup-content {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 100%;
     position: absolute;
     z-index: 2;
     top: 0;
@@ -1232,6 +1352,13 @@ div.bloksportsmen:after {
     padding: 20px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.popup-content-background {
+    background-image: url("../../images/pjyedyestal1.jpg");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: cover;
+    background-position: center center;
 }
 
 .popup-shower {
@@ -1281,17 +1408,17 @@ div.bloksportsmen:after {
     width: 30%;
     height: auto;
     float: left;
+    margin-top: 0.5%;
 }
 
 .modalwindowinside p {
     font-family: 'OpenSans-Semibold';
     margin: 0 0 0 0;
-
 }
 
 .modalwindowinsideimg{
     position: inherit;
-    width: 100%;
+    width: 70%;
     height: 95%;
     margin-bottom: 2%;
 }
@@ -1313,38 +1440,32 @@ div.bloksportsmen:after {
 
 .modalwindowinsidetext1{
     font-size: 20px;
-
     display: inline-block;
     width: 40%;
     float: right;
     vertical-align: top;
     text-align: left;
-    font-weight: bold;
-
-
+    /*font-weight: bold;*/
 }
+
 .modalwindowinsidetext1 p {
     font-family: 'OpenSans-Semibold';
     margin: 0 0 0 0;
-
 }
+
 .modalwindowinsidetext3{
     font-size: 20px;
-
     display: inline-block;
     width: 70%;
-    float: right;
+    float: left;
     vertical-align: top;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-
 }
 
 .modalwindowinsidetext3 p {
-    padding-left: 10%;
+    /*padding-left: 10%;*/
     font-family: 'OpenSans-Semibold';
-
-
 }
 
 .blockleadership{
@@ -1357,22 +1478,20 @@ div.bloksportsmen:after {
 .blockleadership p {
     font-family: 'OpenSans-Semibold';
 }
+
 .modalwindowinsidetextleadership1{
     font-size: 20px;
-
     display: inline-block;
     width: 60%;
     float: right;
     vertical-align: top;
     text-align: left;
     font-weight: bold;
-
-
 }
+
 .modalwindowinsidetextleadership1 p {
     font-family: 'OpenSans-Semibold';
     margin: 0 0 0 0;
-
 }
 
 .modalwindowinsidetextleadership{
@@ -1382,14 +1501,66 @@ div.bloksportsmen:after {
     width: 40%;
     vertical-align: top;
     text-align: left;
-
-
 }
+
 .modalwindowinsidetextleadership p {
     font-family: 'OpenSans-Semibold';
     margin: 0 0 0 0;
 
 }
+
+.achievements{
+    width: 100%;
+    display: inline-block;
+    font-family: 'OpenSans-Semibold';
+
+
+}
+
+.achievements_name {
+    font-family: 'OpenSans-Semibold';
+
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    float: left;
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+
+}
+
+
+.achievements_first_column {
+    font-size: 16px;
+    font-family: 'OpenSans-Semibold';
+
+    margin-right: 1%;
+    display: inline-block;
+    width: 47%;
+    /*float: left;*/
+    vertical-align: top;
+
+}
+
+
+.achievements_second_column{
+    font-size: 16px;
+    font-family: 'OpenSans-Semibold';
+
+    display: inline-block;
+    width:50%;
+    /*float: right;*/
+    vertical-align: top;
+
+}
+
+.nextnational{
+    float: right;
+}
+
+
 
 /*.col1{*/
     /*width: 10%;*/
@@ -1467,15 +1638,29 @@ div.bloksportsmen:after {
     padding-right: 2%;
 }
 
+.photoservise img {
+    border: 3px solid #fff;
+}
+
+a.photoservise:hover img{
+    border: 3px solid #0000aa;
+}
+
+.photoservise a {
+    text-align: center;
+    font-size: 16px;
+    color: #0000aa;
+}
+
 
 /*расположение на странице руководителей*/
 .leadershipB{
     width: 100%;
     display: inline-block;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin-top: 5%
+    /*margin-right: 5%;*/
+    margin-left: 3%;
+    margin-bottom: 2%;
+    margin-top: 2%
 }
 
 
@@ -1485,10 +1670,15 @@ div.bloksportsmen:after {
     vertical-align: top;
     display: inline-block;
 }
+
 .leadershipBlable{
     width: 35%;
     float: left;
 
+}
+.leadershipBlable1{
+    width: 100%;
+    display: inline-block;
 }
 .leadershipBlableimg{
     margin-left: 5%;
@@ -1497,6 +1687,7 @@ div.bloksportsmen:after {
 }
 
 .leadershipBp {
+    font-family: 'OpenSans-Semibold';
     vertical-align: top;
     text-align: left;
     position: inherit;
@@ -1504,7 +1695,7 @@ div.bloksportsmen:after {
     font-weight: 500;
     /*text-align: left;*/
     width: 100%;
-    padding-left: 20%;
+    padding-left: 40%;
     padding-right: 2%;
     text-decoration: none;
     border: none;
@@ -1519,6 +1710,16 @@ div.bloksportsmen:after {
     padding-top: 2%;
 }
 
+
+.dolznost{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    /*padding-right: 5%;*/
+    text-align: left;
+    font-family: 'OpenSans-Semibold';
+
+}
 
 
 .imageForNews{

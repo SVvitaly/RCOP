@@ -26,3 +26,8 @@ ru:
   our_partner: Наши партнеры
   news: Новости
   home: /ru
+  date:
+    formats:
+      default: "%d %B %Y"
+      short: "%b %d"
+      long: "%B %d, %Y"

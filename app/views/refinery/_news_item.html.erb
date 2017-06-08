@@ -1,0 +1,22 @@
+<div class="ca-item ca-item-1">
+  <div class="ca-item-main">
+    <div class="ca-icon">
+      <%= image_tag(item.image.url) if item.image %>
+    </div>
+    <h3><%= l item.publish_date.to_date %></h3>
+    <h4>
+      <span class="ca-quote">“</span>
+      <span><%= item.short_title %></span>
+    </h4>
+    <p><a href="#" class="ca-more">побробнее...</a>
+    </p>
+  </div>
+  <div class="ca-content-wrapper">
+    <div class="ca-content">
+      <a href="#" class="ca-close">close</a>
+      <%= item.body.html_safe if item.body %>
+    </div>
+  </div>
+</div>
+
+

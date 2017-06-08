@@ -7,7 +7,11 @@
 <div id="ca-container" class="ca-container">
   <div class="ca-wrapper">
     <% @items.each do |item| %>
-        <%= item.body.html_safe if item.body.present? %>
+        <%= render('refinery/news_item',item: item) %>
     <% end %>
   </div>
 </div>
+
+
+
+

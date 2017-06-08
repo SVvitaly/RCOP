@@ -26,6 +26,10 @@ en:
   news: NEWS
   our_partner: Our partners
   home: /home
-
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%b %d"
+      long: "%B %d, %Y"
 
 
