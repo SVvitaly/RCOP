@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
 # Use sqlite3 as the database for Active Record
@@ -41,18 +40,19 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-  gem "capistrano", "~> 3.8"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rvm'
 end
- gem 'rake', '11.3.0'
- gem 'minitest', '5.9.1'
- gem 'coffee-script-source', '1.11.1'
- gem 'concurrent-ruby', '1.0.2'
- gem 'sass', '3.4.22'
- gem 'sprockets', '3.7.0'
 
-
+gem 'rake', '11.3.0'
+gem 'minitest', '5.9.1'
+gem 'coffee-script-source', '1.11.1'
+gem 'concurrent-ruby', '1.0.2'
+gem 'sass', '3.4.22'
+gem 'sprockets', '3.7.0'
 
 # Refinery CMS
 gem 'refinerycms', '~> 3.0'
