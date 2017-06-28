@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323210725) do
+ActiveRecord::Schema.define(version: 20170628205457) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title", limit: 255
@@ -54,6 +54,31 @@ ActiveRecord::Schema.define(version: 20170323210725) do
 
   add_index "refinery_authentication_devise_users", ["id"], name: "index_refinery_authentication_devise_users_on_id", using: :btree
   add_index "refinery_authentication_devise_users", ["slug"], name: "index_refinery_authentication_devise_users_on_slug", using: :btree
+
+  create_table "refinery_calendar_events", force: :cascade do |t|
+    t.string   "title",             limit: 255
+    t.string   "registration_link", limit: 255
+    t.string   "excerpt",           limit: 255
+    t.text     "description",       limit: 65535
+    t.integer  "position",          limit: 4
+    t.boolean  "featured"
+    t.string   "slug",              limit: 255
+    t.integer  "venue_id",          limit: 4
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "starts_at"
+    t.datetime "ends_at"
+  end
+
+  create_table "refinery_calendar_venues", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "address",    limit: 255
+    t.string   "url",        limit: 255
+    t.string   "phone",      limit: 255
+    t.integer  "position",   limit: 4
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", limit: 4,   null: false
