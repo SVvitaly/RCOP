@@ -36,3 +36,14 @@ set :rvm_ruby_version, "2.3.1@#{fetch(:application)}"
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+
+namespace :deploy do
+  after :restart, :restart_passenger do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      within release_path do
+        execute :touch, 'tmp/restart.txt'
+      end
+    end
+  end
+  after :finishing, 'deploy:restart_passenger'
+end
