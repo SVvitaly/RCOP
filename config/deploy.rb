@@ -3,6 +3,8 @@ lock "3.8.2"
 
 set :application, "rcop"
 set :repo_url, "git@github.com:SVvitaly/RCOP.git"
+set :rvm_type, :system
+set :rvm_ruby_version, "2.3.1@#{fetch(:application)}"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
