@@ -51,6 +51,14 @@
           $('#ca-container').contentcarousel();
       });
   </script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>  ">
   <%= site_bar -%>
