@@ -51,6 +51,21 @@
           $('#ca-container').contentcarousel();
       });
   </script>
+  <script type="text/javascript">
+    var node = document.createElement('script');
+    node.async = true;
+    node.src = fileName;
+    $('head')[0].appendChild(node);
+  </script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
 </head>
 <body>
 <%= site_bar -%>
