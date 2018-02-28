@@ -17,23 +17,18 @@
  *= require_self
  */
 
-
 /*Основные*/
 .backgroundfon{
     background-color: whitesmoke;
     opacity: 1;
     margin: 0 10% 0 10%;
     padding: 0.1% 2% 0.1% 2%;
-    /*border: 5px solid blue;*/
     box-shadow:
             inset 0 0 0 2px rgba(47, 46, 241, 0.79),
             inset 0 0 2px rgba(47, 46, 241, 0.79),
             inset 0 0 2px white;
     border-radius: 10px 10px 10px 10px;
 }
-
-
-
 
 /* css for header*/
 .headerEmblema{
@@ -47,29 +42,18 @@
 }
 
 #logo1{
-    /*font-family: Geneva, Arial, Helvetica, sans-serif;*/
-    /*font-family: 'OpenSans-CondensedLight', sans-serif;*/
     font-family: 'OpenSans-Semibold';
-    /*font-style: italic;*/
     color: #2f2ef1; /* Белый цвет текста */
     font-size: 1em; /* Размер надписи */
     letter-spacing: 2px;
     text-decoration: none;
     text-shadow:
-            /*-1px -1px 0 #4b3680,*/
-            /*1px -1px 0 #4b3680,*/
             -1px 1px 0 #4b3680;
-            /*1px 1px 0 #4b3680;*/
-    /*margin-bottom: 20px;*/
-    /*font-size: 35px;*/
 }
-
-
 
 #header ul{
     font-size: 18px;
 }
-
 
 #header h1 {
     margin: 0 0 200px 0;
@@ -83,16 +67,11 @@
     border-radius: 0 10px 0 10px;
     background-repeat: no-repeat;
     background-image: url('/images/Фон/72.jpg');;
-    /*background-position: left;*/
     background-position-y: top;
-
     position: relative;
     background-size: cover;
     background-color: transparent;
     background-position: center center;
-    /*background-attachment: fixed;*/
-
-    /*background-image: url('../../images/4.jpg');*/
     cursor: default;
     /*Mozila*/
     -moz-animation-name: test;
@@ -123,16 +102,12 @@
     animation-timing-function: ease-in-out;
     transition: opacity 1s ease-in-out;
     left: 0;
-    /*background: linear-gradient(to bottom right, #fefcea, #82c8f1);*/
 }
-
 
 /*For all page*/
 
-
 h2{
     font-size: 32px;
-
 }
 
 header h2 {
@@ -142,11 +117,9 @@ header h2 {
 
 h2 a{
     font-size: 36px;
-
 }
 
 /* change background */
-
 
 @-webkit-keyframes backgrounfon {
     0% {
@@ -158,7 +131,6 @@ h2 a{
     100% {
         background-image: url('../../images/summer/20.jpg');
     }
-
 }
 
 @-moz-keyframes backgrounfon {
@@ -171,9 +143,8 @@ h2 a{
     100% {
         background-image: url('../../images/summer/20.jpg');
     }
-
-
 }
+
 @-o-keyframes backgrounfon {
     0% {
         background-image: url('../../images/summer/19.jpg');
@@ -184,7 +155,6 @@ h2 a{
     100% {
         background-image: url('../../images/summer/20.jpg');
     }
-
 }
 
 @keyframes backgrounfon {
@@ -199,14 +169,12 @@ h2 a{
     }
 }
 
-
 body {
     position: relative;
     background-size: cover;
     background-color: transparent;
     background-position: center center;
     background-attachment: fixed;
-
     background-image: url('../../images/4.jpg');
     cursor: default;
     /*Mozila*/
@@ -230,7 +198,6 @@ body {
     -webkit-animation-direction: alternate;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
-
     animation-name: backgrounfon;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -238,7 +205,6 @@ body {
     animation-timing-function: ease-in-out;
     transition: opacity 1s ease-in-out;
     left: 0;
-
 }
 
 .header-title {
@@ -257,7 +223,6 @@ body {
     text-align: center;
 }
 
-
 .nav{
     margin-top: 0%;
     padding-bottom: 2%;
@@ -270,9 +235,6 @@ body {
     padding-top: 1%;
     padding-bottom: 2%;
 }
-
-
-
 
 .button {
     position: relative;
@@ -292,7 +254,6 @@ body {
     -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 }
-
 
 .button:hover {
     color: #fff;
@@ -331,7 +292,6 @@ footer  h3{
 
 .icons{
     background: #a9cbf1;
-
 }
 
 ul.icons {
@@ -379,12 +339,11 @@ ul.icons li a {
                 0px 34px 30px rgba(0,0,0,0.1);
 
 }
+
 .Honhomege a {
     font-size: 30px;
     font-weight: 600;
-
 }
-
 
 .phototext{
     text-align: left;
@@ -393,11 +352,6 @@ ul.icons li a {
     padding-top: 1%;
     color: #2f2ef1;
     font-family: 'OpenSans-Semibold';
-    /*text-shadow: 0px 3px 0px #b2a98f,*/
-    /*0px 14px 10px rgba(0,0,0,0.15),*/
-        /*0px 24px 2px rgba(0,0,0,0.1),*/
-    /*0px 34px 30px rgba(0,0,0,0.1);*/
-
 }
 
 .text-kursiv{
@@ -407,12 +361,10 @@ ul.icons li a {
     font-size: 40px;
 }
 
-
 .text-reading{
     color: black;
     font-weight: 100;
     font-family: 'OpenSans-Semibold';
-    /*font-family: 'Times', serif;*/
     text-align: center;
     font-size: 16px;
     padding: 5px 5px;
@@ -422,7 +374,6 @@ ul.icons li a {
     color: black;
     font-weight: 100;
     font-family: 'OpenSans-Semibold';
-    /*font-family: 'Times', serif;*/
     text-align: center;
     font-size: 20px;
     padding: 5px 5px;
@@ -432,7 +383,6 @@ ul.icons li a {
     color: #2b3fef;
     font-weight: 100;
     font-family: 'OpenSans-Semibold';
-    /*font-family: 'Times', serif;*/
     text-align: center;
     font-size: 20px;
     padding: 5px 5px;
@@ -460,13 +410,16 @@ ul.icons li a {
     padding-left: 1%;
     padding-right: 1%;
 }
+
 .ca-icon img{
     height: auto;
     width: auto;
 }
+
 .dva {
     position: relative;
 }
+
 .dva:after {
     content: "";
     position: absolute; top: 0; left: 0;
@@ -475,6 +428,7 @@ ul.icons li a {
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)) no-repeat 100% 0%;
     background-size: 100% 100%;
 }
+
 .dva:hover:after {
     transition: 12s linear;
     background-size: 0 100%;
@@ -492,8 +446,6 @@ ul.icons li a {
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
-    /*margin-bottom: 20px;*/
-    /*font-size: 35px;*/
 }
 
 .text-reading1{
@@ -505,60 +457,17 @@ ul.icons li a {
     padding: 5% 5% 0 5%;
 }
 
-/*.deepshadow {*/
-    /*color: #131313;*/
-    /*background-color: #e7e5e4;*/
-    /*letter-spacing: .15em;*/
-    /*text-shadow:*/
-            /*1px -1px 0 #767676,*/
-            /*-1px 2px 1px #737272,*/
-            /*-2px 4px 1px #767474,*/
-            /*-3px 6px 1px #787777,*/
-            /*-4px 8px 1px #7b7a7a,*/
-            /*-5px 10px 1px #7f7d7d,*/
-            /*-6px 12px 1px #828181,*/
-            /*-7px 14px 1px #868585,*/
-            /*-8px 16px 1px #8b8a89,*/
-            /*-9px 18px 1px #8f8e8d,*/
-            /*-10px 20px 1px #949392,*/
-            /*-11px 22px 1px #999897,*/
-            /*-12px 24px 1px #9e9c9c,*/
-            /*-13px 26px 1px #a3a1a1,*/
-            /*-14px 28px 1px #a8a6a6,*/
-            /*-15px 30px 1px #adabab,*/
-            /*-16px 32px 1px #b2b1b0,*/
-            /*-17px 34px 1px #b7b6b5,*/
-            /*-18px 36px 1px #bcbbba,*/
-            /*-19px 38px 1px #c1bfbf,*/
-            /*-20px 40px 1px #c6c4c4,*/
-            /*-21px 42px 1px #cbc9c8,*/
-            /*-22px 44px 1px #cfcdcd,*/
-            /*-23px 46px 1px #d4d2d1,*/
-            /*-24px 48px 1px #d8d6d5,*/
-            /*-25px 50px 1px #dbdad9,*/
-            /*-26px 52px 1px #dfdddc,*/
-            /*-27px 54px 1px #e2e0df,*/
-            /*-28px 56px 1px #e4e3e2;*/
-/*}*/
-
-
-
-
-
 .image.featured {
     display: block;
     width: 100%;
     margin: 0 0 0 0;
 }
 
-
-
 /*карусель фотоархива*/
 
 .widthphotocarousel{
     width: 200px;
 }
-
 
 /* Gallery */
 .gallery img{
@@ -568,7 +477,6 @@ ul.icons li a {
 a.photo:hover img{
     border:3px solid #034F80; /* изменение цвета рамки при наведении на картинку */
 }
-
 
 /*страница контактов*/
 .contact{
@@ -597,7 +505,6 @@ a.photo:hover img{
 
 }
 
-
 /*footer adres*/
 .footeradres{
     font-size: 10px;
@@ -605,10 +512,8 @@ a.photo:hover img{
 
 /*Карусель в footer*/
 
-
 .carousel article {
     vertical-align: top;
-
 }
 
 .pull-left{
@@ -620,13 +525,9 @@ a.photo:hover img{
     padding: 20px;
 }
 
-
-
-
 /*Электронные ресурсы*/
 
 .resurse{
-
     width: 100%;
 }
 
@@ -641,14 +542,7 @@ a.photo:hover img{
     padding-left: 2%;
     font-size: 20px;
     display: inline-block;
-
 }
-
-/*.resurse2 p {*/
-    /*font-family: 'OpenSans-Semibold';*/
-    /*size: 16px;*/
-/*}*/
-
 
 /* Images sportsmen */
 
@@ -699,7 +593,6 @@ div.blok6:after {
     content: attr(data-zagolovok);
     display: block;
     font-weight: bold;
-    /*font-family: Helvetica;*/
     font-size: 20px;
     text-align: center;
 }
@@ -714,21 +607,11 @@ div.blok8 {
 
 div.blok8:before {
     background-color: rgba(255, 255, 255, 0.2);
-    /*border-radius: 10px;*/
-    /*box-shadow: 10px 10px 10px #ecf7ff inset;*/
-    /*content: attr(data-title);*/
-    /*font-family: Tahoma;*/
     white-space: normal;
     display: inline-block;
     font-size: 32px;
-    /*height: 55%;*/
-    /*width: 45%;*/
-    /*line-height: 48px;*/
     opacity: 0;
-    /*padding: 0 10px;*/
     position: absolute;
-    /*right: 50px;*/
-    /*top: 20px;*/
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -o-transition: all 1s;
@@ -738,9 +621,7 @@ div.blok8:before {
 
 
 div.blok8:hover:before {
-    /*right: 160px;*/
     opacity: 1;
-    /*top: 140px;*/
 }
 
 div.blok8 img {
@@ -765,71 +646,11 @@ div.blok8:after {
     text-align: left;
 }
 
-
-
-
-
-
-
-
-
-/*.leadership{*/
-    /*text-align: left;*/
-    /*margin-left: 5%;*/
-    /*font-size: 30px;*/
-    /*color: black;*/
-    /*font-weight: bold;*/
-/*}*/
-
-/*#col1 {*/
-    /*width: 50%; !* Ширина первой колонки *!*/
-    /*vertical-align: top;*/
-    /*padding: 0 3% 3% 3%;*/
-/*}*/
-
-/*table {*/
-    /*border-color: black;*/
-    /*border-width: 10px;*/
-
-/*}*/
-
-/*#td1 {*/
-    /*display: inline-block;*/
-    /*vertical-align: inherit;*/
-    /*border-color: black;*/
-    /*border-width: 10px;*/
-
-/*}*/
-
-/*tr {*/
-    /*border-color: black;*/
-    /*border-width: 10px;*/
-
-/*}*/
-
-/*.table {*/
-    /*background: white;*/
-    /*border-color: black;*/
-    /*border-width: 3px;*/
-    /*border-style: solid;*/
-/*}*/
-
-
-/*.table td{*/
-    /*border-color: black;*/
-    /*border-width: 3px;*/
-    /*border-style: solid;*/
-/*}*/
-
-
-
-
 /* Услуги */
 
 .services{
     width: 100%;
     font-family: 'OpenSans-Semibold';
-    /*font-family: Helvetica;*/
     font-size: 20px;
 }
 
@@ -867,7 +688,6 @@ div.blok8:after {
     display: inline-block;
 }
 
-
 .col5 image{
     width: 100%;
     height: 80%;
@@ -887,7 +707,6 @@ div.blok8:after {
     font-family: 'OpenSans-Semibold';
 }
 .col4 p{
-
     text-align: left;
     font-family: 'OpenSans-Semibold';
 
@@ -964,9 +783,6 @@ footer {
     margin: 2.5em 0 0 0;
 }
 
-
-
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     font-family: Geneva, Arial, Helvetica, sans-serif;
 }
@@ -975,11 +791,6 @@ a {
     border: none;
     text-decoration: none;
 }
-
-
-
-
-
 
 /* Images sportsmen */
 div.bloksportsmen{
@@ -994,7 +805,6 @@ div.bloksportsmen:before {
     border-radius: 10px;
     box-shadow: 10px 10px 10px #ecf7ff inset;
     content: attr(data-title);
-    /*font-family: Tahoma;*/
     white-space: normal;
     display: inline-block;
     font-size: 20px;
@@ -1012,8 +822,6 @@ div.bloksportsmen:before {
     -o-transition: all 1s;
     transition: all 1s;
 }
-
-
 
 div.bloksportsmen:hover:before {
     right: 20%;
@@ -1042,7 +850,6 @@ div.bloksportsmen:after {
     text-align: left;
 }
 
-
 .sportB{
     width: 100%;
     /*height: 150px;*/
@@ -1055,7 +862,6 @@ div.bloksportsmen:after {
 
 .sport1{
     width: 22%;
-    /*height: 150px;*/
     margin-top: 5px;
     padding-right: 7%;
     left: 2px;
@@ -1065,7 +871,6 @@ div.bloksportsmen:after {
 
 .sport2{
     width: 22%;
-    /*height: 150px;*/
     margin-left: 3%;
     text-align: center;
     display: inline-block;
@@ -1074,7 +879,6 @@ div.bloksportsmen:after {
 
 .sport3{
     width: 22%;
-    /*height: 150px;*/
     margin-left: 3%;
     text-align: center;
     display: inline-block;
@@ -1083,7 +887,6 @@ div.bloksportsmen:after {
 
 .sport4{
     width: 22%;
-    /*height: 150px;*/
     margin-left: 3%;
     text-align: center;
     display: inline-block;
@@ -1092,18 +895,14 @@ div.bloksportsmen:after {
 
 .sporta{
     width: 95%;
-    /*height: 150px;*/
     display: inline-block;
     margin-right: 3%;
     margin-left: 3%;
     font-size: 24px;
-    /*font-family: Helvetica;*/
-    /*font-size: 20px;*/
 }
 
 .sporta1{
     width: 5%;
-    /*height: 150px;*/
     margin-top: 5px;
     padding-right: 7%;
     left: 2px;
@@ -1114,7 +913,6 @@ div.bloksportsmen:after {
 
 .sporta2{
     width: 25%;
-    /*height: 150px;*/
     text-align: center;
     display: inline-block;
     position: inherit;
@@ -1122,7 +920,6 @@ div.bloksportsmen:after {
 
 .sporta3{
     width: 13%;
-    /*height: 150px;*/
     text-align: center;
     display: inline-block;
     position: inherit;
@@ -1130,7 +927,6 @@ div.bloksportsmen:after {
 
 .sporta4{
     width: 13%;
-    /*height: 150px;*/
     text-align: center;
     display: inline-block;
     position: inherit;
@@ -1138,7 +934,6 @@ div.bloksportsmen:after {
 
 .sporta5{
      width: 13%;
-     /*height: 150px;*/
      text-align: center;
      display: inline-block;
      position: inherit;
@@ -1146,7 +941,6 @@ div.bloksportsmen:after {
 
 .sporta6{
     width: 25%;
-    /*height: 150px;*/
     text-align: center;
     display: inline-block;
     position: inherit;
@@ -1154,7 +948,6 @@ div.bloksportsmen:after {
 
 .tren{
     width: 95%;
-    /*height: 150px;*/
     display: inline-block;
     margin-right: 3%;
     margin-left: 3%;
@@ -1163,7 +956,6 @@ div.bloksportsmen:after {
 
 .tren1{
     width: 30%;
-    /*height: 150px;*/
     margin-top: 5px;
     padding-right: 7%;
     left: 2px;
@@ -1174,18 +966,17 @@ div.bloksportsmen:after {
 
 .tren2{
     width: 55%;
-    /*height: 150px;*/
     text-align: left;
     display: inline-block;
     position: inherit;
 }
-
 
 /* carousel основная на главной странице*/
 
 .carouselbuttom {
     margin-bottom: 0;
 }
+
 .carousel {
     position: relative;
     overflow: hidden;
@@ -1366,7 +1157,6 @@ div.bloksportsmen:after {
 .popup-shower {
     color: #00f;
     cursor: pointer;
-    /*text-decoration: underline;*/
 }
 
 .popup-shower:hover {
@@ -1431,9 +1221,8 @@ div.bloksportsmen:after {
     width: 30%;
     vertical-align: top;
     text-align: left;
-
-
 }
+
 .modalwindowinsidetext p {
     font-family: 'OpenSans-Semibold';
     margin: 0 0 0 0;
@@ -1447,7 +1236,6 @@ div.bloksportsmen:after {
     float: right;
     vertical-align: top;
     text-align: left;
-    /*font-weight: bold;*/
 }
 
 .modalwindowinsidetext1 p {
@@ -1466,7 +1254,6 @@ div.bloksportsmen:after {
 }
 
 .modalwindowinsidetext3 p {
-    /*padding-left: 10%;*/
     font-family: 'OpenSans-Semibold';
 }
 
@@ -1515,8 +1302,6 @@ div.bloksportsmen:after {
     width: 100%;
     display: inline-block;
     font-family: 'OpenSans-Semibold';
-
-
 }
 
 .achievements_name {
@@ -1530,30 +1315,24 @@ div.bloksportsmen:after {
     text-align: center;
     font-weight: bold;
     display: inline;
-
 }
 
 
 .achievements_first_column {
     font-size: 16px;
     font-family: 'OpenSans-Semibold';
-
     margin-right: 1%;
     display: inline-block;
     width: 47%;
-    /*float: left;*/
     vertical-align: top;
-
 }
 
 
 .achievements_second_column{
     font-size: 16px;
     font-family: 'OpenSans-Semibold';
-
     display: inline-block;
     width:50%;
-    /*float: right;*/
     vertical-align: top;
 
 }
@@ -1562,34 +1341,9 @@ div.bloksportsmen:after {
     float: right;
 }
 
-
-
-/*.col1{*/
-    /*width: 10%;*/
-    /*margin-left: 3%;*/
-    /*text-align: center;*/
-    /*display: inline-block;*/
-/*}*/
-
-/*.col2{*/
-    /*width: 40%;*/
-    /*margin-left: 3%;*/
-    /*text-align: center;*/
-    /*display: inline-block;*/
-/*}*/
-/*.col3{*/
-    /*width: 15%;*/
-    /*margin-left: 3%;*/
-    /*text-align: center;*/
-    /*display: inline-block;*/
-/*}*/
-
-
 .headerlocale{
     position: relative;
     width: 100%;
-    /*background-color: #0000aa;*/
-    /*opacity: 0.5;*/
     text-align: left;
     padding: 0%;
     margin: 0%;
@@ -1607,7 +1361,6 @@ div.bloksportsmen:after {
 }
 
 .en{
-    /*text-shadow: -1px -1px 0 #0f8ad3, 1px -1px 0 #0f8ad3, -1px 1px 0 #0f8ad3, 1px 1px 0 #0f8ad3;*/
     font-weight: 700;
     color: #0f8ad3;
     font-size: 3em;
@@ -1619,7 +1372,6 @@ div.bloksportsmen:after {
 }
 
 .ru{
-    /*text-shadow: -0px -0px 0 #0f8ad3, 0px -0px 0 #0f8ad3, -0px 0px 0 #0f8ad3, 0px 0px 0 #0f8ad3;*/
     font-weight: 700;
     color: #0f8ad3;
     font-size: 3em;
@@ -1651,18 +1403,14 @@ a.photoservise:hover img{
     color: #0000aa;
 }
 
-
 /*расположение на странице руководителей*/
 .leadershipB{
     width: 100%;
     display: inline-block;
-    /*margin-right: 5%;*/
     margin-left: 3%;
     margin-bottom: 2%;
     margin-top: 2%
 }
-
-
 
 .leadershipBcont{
     width: 30%;
@@ -1692,7 +1440,6 @@ a.photoservise:hover img{
     position: inherit;
     font-size: 20px;
     font-weight: 500;
-    /*text-align: left;*/
     width: 100%;
     padding-left: 40%;
     padding-right: 2%;
@@ -1717,7 +1464,6 @@ a.photoservise:hover img{
     /*padding-right: 5%;*/
     text-align: left;
     font-family: 'OpenSans-Semibold';
-
 }
 
 
@@ -1733,8 +1479,6 @@ a.photoservise:hover img{
     background-color: transparent;
     width: 40%;
 }
-
-
 
 .blockforgallery{
     padding: 2% 5% 2% 5%;
@@ -1757,13 +1501,7 @@ a.photoservise:hover img{
     height: 100%;
 }
 
-
-
-
 /* css for Home page*/
-
-
-
 .textNewsData{
     font-size: 18px;
     font-weight: bold;
