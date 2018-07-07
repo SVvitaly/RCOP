@@ -19,33 +19,41 @@
 
 /*Основные*/
 .backgroundfon{
-    background-color: whitesmoke;
     opacity: 1;
-    margin: 0 10% 0 10%;
-    padding: 0.1% 2% 0.1% 2%;
-    box-shadow:
-            inset 0 0 0 2px rgba(47, 46, 241, 0.79),
-            inset 0 0 2px rgba(47, 46, 241, 0.79),
-            inset 0 0 2px white;
-    border-radius: 10px 10px 10px 10px;
+    background-image: url('/images/Фон/140520040155!.jpg');
+    background-attachment:fixed
+}
+.backgroundfonfooter{
+    opacity: 1;
 }
 
+
+
 /* css for header*/
+.headerEmblema {
+    display: inline;
+    position: inherit;
+    width: 100%;
+
+}
 .headerEmblema{
     padding-left: 1%;
     width: 150px;
     float: left;
 }
+
 .headerEmblemaimg{
     position: inherit;
     width: 100%;
 }
 
+
 #logo1{
-    font-family: 'OpenSans-Semibold';
-    color: #2f2ef1; /* Белый цвет текста */
+    font-family: 'Impact', fantasy;
+    color: #2ca1f1; /* Белый цвет текста */
     font-size: 1em; /* Размер надписи */
     letter-spacing: 2px;
+    font-weight: 800;
     text-decoration: none;
     text-shadow:
             -1px 1px 0 #4b3680;
@@ -61,12 +69,10 @@
 }
 
 .demo-2{
-    margin: 0 10% 0 10%;
     font-weight: 400;
     color: black;
-    border-radius: 0 10px 0 10px;
     background-repeat: no-repeat;
-    background-image: url('/images/Фон/72.jpg');;
+    background-image: url('/images/Фон/73.jpg');
     background-position-y: top;
     position: relative;
     background-size: cover;
@@ -121,53 +127,6 @@ h2 a{
 
 /* change background */
 
-@-webkit-keyframes backgrounfon {
-    0% {
-        background-image: url('../../images/summer/19.jpg');
-    }
-    50% {
-        background-image: url('../../images/summer/18.jpg');
-    }
-    100% {
-        background-image: url('../../images/summer/20.jpg');
-    }
-}
-
-@-moz-keyframes backgrounfon {
-    0% {
-        background-image: url('../../images/summer/19.jpg');
-    }
-    50% {
-        background-image: url('../../images/summer/18.jpg');
-    }
-    100% {
-        background-image: url('../../images/summer/20.jpg');
-    }
-}
-
-@-o-keyframes backgrounfon {
-    0% {
-        background-image: url('../../images/summer/19.jpg');
-    }
-    50% {
-        background-image: url('../../images/summer/18.jpg');
-    }
-    100% {
-        background-image: url('../../images/summer/20.jpg');
-    }
-}
-
-@keyframes backgrounfon {
-    0% {
-        background-image: url('../../images/summer/19.jpg');
-    }
-    50% {
-        background-image: url('../../images/summer/18.jpg');
-    }
-    100% {
-        background-image: url('../../images/summer/20.jpg');
-    }
-}
 
 body {
     position: relative;
@@ -175,7 +134,6 @@ body {
     background-color: transparent;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url('../../images/4.jpg');
     cursor: default;
     /*Mozila*/
     -moz-animation-name: backgrounfon;
@@ -218,8 +176,8 @@ body {
 }
 
 #header1 {
-    margin-butom: 5%;
     color: #fff;
+    margin: 0 0 0 0;
     text-align: center;
 }
 
@@ -229,6 +187,7 @@ body {
 }
 
 #nav{
+
     position: inherit;
     padding: 0 0 1em 0;;
     margin-top: 0%;
@@ -263,10 +222,16 @@ body {
 
 /*Footer css*/
 .footer{
-    padding: 0.01em 2em 0 3em;
-    margin: 5% 10% 0 10%;
     color: black;
     text-align: center;
+    background-image: url('/images/Фон/12.jpg');
+
+}
+
+
+#footer{
+    padding: 0;
+    margin: 0;
 }
 
 #footer  h3{
@@ -278,11 +243,7 @@ footer  h3{
     font-size: 18px;
 }
 .copyright{
-    margin: 3% 0 0 3%
-}
-
-.otside{
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .otside h3{
@@ -290,58 +251,54 @@ footer  h3{
     font-size: 20px;
 }
 
-.icons{
-    background: #a9cbf1;
-}
-
-ul.icons {
-    position: relative;
-    background: rgba(128, 128, 128, 0.05);
-    border-radius: 4em;
-    display: inline-block;
-    padding: 0em 0em 0em 0em;
-    font-size: 1.25em;
-    cursor: default;
-    color: #0f8ad3;
-    font-size: 2em;
-    margin-bottom: 0%;
-    padding-left: 0%;
-}
-
-ul.icons li a {
-    display: inline-block;
-    background: none;
-    width: 2.5em;
-    height: 0em;
-    line-height: 0em;
-    text-align: center;
-    border-radius: 100%;
-    border: 0;
-    color: inherit;
-}
-
-
 /*TEXTS*/
 
 .center-text{
     text-align: center;
 }
 
+
 .Honhomege{
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-family: Times;
     text-align: left;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 50px;
     padding-top: 1%;
-    color: #2f2ef1;
+    color: black;
     text-shadow: 0px 3px 0px #b2a98f,
                 0px 14px 10px rgba(0,0,0,0.15),
-                /*0px 24px 2px rgba(0,0,0,0.1),*/
-                0px 34px 30px rgba(0,0,0,0.1);
 
 }
 
+.partner{
+
+    text-transform: uppercase;
+    font-family: Times;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 0%;
+    color: black;
+    text-shadow: 0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.15),
+}
+
+
+.leftimg {
+    width: 40%;
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+.rightimg  {
+    float: right; /* Выравнивание по правому краю  */
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+
 .Honhomege a {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -355,28 +312,32 @@ ul.icons li a {
 }
 
 .text-kursiv{
-    /*font-style: italic;*/
     text-align: center;
     padding:20px;
     font-size: 40px;
 }
 
 .text-reading{
+    width: 90%;
+    margin-left: 5%;
     color: black;
     font-weight: 100;
     font-family: 'OpenSans-Semibold';
     text-align: center;
-    font-size: 16px;
+    font-size: 22px;
     padding: 5px 5px;
 }
+
+
 
 .text-reading-services{
     color: black;
     font-weight: 100;
     font-family: 'OpenSans-Semibold';
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     padding: 5px 5px;
+    position: relative;
 }
 
 .text-reading-services a{
@@ -411,6 +372,10 @@ ul.icons li a {
     padding-right: 1%;
 }
 
+.ca-content p{
+    font-size: 16px;
+
+}
 .ca-icon img{
     height: auto;
     width: auto;
@@ -435,17 +400,13 @@ ul.icons li a {
 }
 
 .textBold{
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: #ffffff; /* Белый цвет текста */
-    font-size: 1.1em; /* Размер надписи */
+    font-family: 'Impact', fantasy !important;
+    color: #000000; /* Белый цвет текста */
+    font-size: 20px; /* Размер надписи */
     width: auto;
     text-decoration: none;
-    text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .text-reading1{
@@ -459,7 +420,7 @@ ul.icons li a {
 
 .image.featured {
     display: block;
-    width: 100%;
+    width: 50%;
     margin: 0 0 0 0;
 }
 
@@ -470,6 +431,16 @@ ul.icons li a {
 }
 
 /* Gallery */
+
+.gallery{
+    position: relative;
+    display: inline-block;
+}
+
+.photo{
+    position: relative !important;
+}
+
 .gallery img{
     margin:5px; /* внешние отступы картинок */
     border:3px solid #fff; /* рамка картинок */
@@ -480,17 +451,20 @@ a.photo:hover img{
 
 /*страница контактов*/
 .contact{
-    padding-top: 2%;
     width:100%;
 }
 
 .contactleft{
-    width:45%;
+    margin-left: 5%;
+    margin-top: 2%;
+    width:30%;
     display: inline-block;
     vertical-align: top;
 }
 
 .contactridth{
+    margin-left: 5%;
+    margin-top: 2%;
     width:50%;
     display: inline-block;
     vertical-align: top;
@@ -695,21 +669,16 @@ div.blok8:after {
 
 .col1 p{
     text-align: left;
-    font-family: 'OpenSans-Semibold';
 }
 
 .col2 p{
     text-align: left;
-    font-family: 'OpenSans-Semibold';
 }
 .col3 p{
     text-align: left;
-    font-family: 'OpenSans-Semibold';
 }
 .col4 p{
     text-align: left;
-    font-family: 'OpenSans-Semibold';
-
 }
 /* Основной блок */
 .owl-wrapper-outer {
@@ -730,7 +699,7 @@ div.blok8:after {
 .container1 {
     display: inline-block;
     max-width: 100%;
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
@@ -768,7 +737,7 @@ section.special > header, section.special > footer, article.special > header, ar
 }
 
 header {
-    margin: 0 0 1em 0;
+    margin: 0 0 0 0;
 }
 
 header > p {
@@ -780,12 +749,10 @@ header > p {
 }
 
 footer {
-    margin: 2.5em 0 0 0;
+    margin: 0 0 0 0;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-}
+
 
 a {
     border: none;
@@ -845,14 +812,12 @@ div.bloksportsmen:after {
     content: attr(data-zagolovok);
     display: block;
     font-weight: bold;
-    /*font-family: Helvetica;*/
     font-size: 20px;
     text-align: left;
 }
 
 .sportB{
     width: 100%;
-    /*height: 150px;*/
     display: inline-block;
     margin-right: 5%;
     margin-left: 5%;
@@ -1342,28 +1307,25 @@ div.bloksportsmen:after {
 }
 
 .headerlocale{
-    position: relative;
-    width: 100%;
-    text-align: left;
-    padding: 0%;
-    margin: 0%;
-    height: auto;
-    margin-bottom: 0em;
-    line-height: 1;
-    margin-bottom: 1%;
+    width: 90%;
+    display: inline;
 }
 
 .localeposition{
-    opacity: 1;
-    width: 100%;
-    text-align: left;
+    position: absolute;
+    right: 85%;
+    /*margin-right: 10%;*/
+    /*float: left;*/
+    width: 20%;
     display: inline;
+    margin-left: auto;
 }
 
 .en{
     font-weight: 700;
-    color: #0f8ad3;
+    color: #33352f;
     font-size: 3em;
+    text-align: left;
     font-family: 'OpenSans-Semibold';
     text-transform: uppercase;
     padding-right: 1%;
@@ -1371,9 +1333,11 @@ div.bloksportsmen:after {
     opacity: 1;
 }
 
+/*bf059931*/
+
 .ru{
     font-weight: 700;
-    color: #0f8ad3;
+    color: #33352f;
     font-size: 3em;
     font-family: 'OpenSans-Semibold';
     text-transform: uppercase;
@@ -1381,16 +1345,62 @@ div.bloksportsmen:after {
     opacity: 1;
 }
 
+.bordernone{
+    margin-top: 0 !important;
+    left: 50%;
+}
+
+.header-id {
+    padding-top: 3.25%;
+    clear:both;
+}
+
+.icons{
+    background: #a9cbf1;
+    margin-top: 1%;
+}
+
+ul.icons {
+    position: relative;
+    background: rgba(128, 128, 128, 0.05);
+    border-radius: 4em;
+    display: inline-block;
+    padding: 0em 0em 0em 0em;
+    font-size: 1.25em;
+    cursor: default;
+    color: #0f8ad3;
+    font-size: 2em;
+    margin-bottom: 0%;
+    padding-left: 0%;
+}
+
+ul.icons li a {
+    display: inline-block;
+    background: none;
+    width: 2.5em;
+    height: 0em;
+    line-height: 0em;
+    text-align: center;
+    border-radius: 100%;
+    border: 0;
+    color: inherit;
+}
+
+
 /*услуги на основной*/
 .photoservise{
-    width: 40%;
+    width: 45%;
+    margin-left: 4%;
     display: inline-block;
     padding-left: 2%;
     padding-right: 2%;
+    text-align: center;
 }
 
 .photoservise img {
     border: 3px solid #fff;
+    width: 100%;
+    margin-left: 6%;
 }
 
 a.photoservise:hover img{
@@ -1399,8 +1409,16 @@ a.photoservise:hover img{
 
 .photoservise a {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     color: #0000aa;
+    position: inherit;
+
+}
+
+.image.featured {
+    display: block;
+    width: 90%;
+    margin: 0 0 0 0;
 }
 
 /*расположение на странице руководителей*/
@@ -1456,7 +1474,10 @@ a.photoservise:hover img{
     padding-top: 2%;
 }
 
+.leadership{
+    margin: 0 !important;
 
+}
 .dolznost{
     color: black;
     font-size: 16px;
@@ -1484,11 +1505,13 @@ a.photoservise:hover img{
     padding: 2% 5% 2% 5%;
 }
 
-.gallery{
-    position: inherit;
-    display: inline-block;
-}
 
+.service{
+    position: relative;
+    width: 100%;
+    height: 50%;
+
+}
 
 .galleryblock{
     width: 24.5%;
@@ -1513,20 +1536,111 @@ a.photoservise:hover img{
     font-family: 'OpenSans-Bold';
 }
 
+#ca-container{
+    width: 86%;
+}
 
 
 
 
+.ca-item {
+    width: 33% !important;
+
+}
 
 
+.ca-item-main{
+    margin-left: 2%;
+    background: transparent !important;
+}
+
+.newsfon{
+    background-color: transparent;
+}
+
+.ca-item h3 {
+    font-family: 'OpenSans-Semibold';
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 30px !important;
+    color: #000;
+    height: 45px;
+    text-align: center;
+    text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+#makeMeScrollable{
+    /* ширина контейнера, можно задать в процентах */
+    width:90%;
+    margin:0 auto;
+    display:block;
+    position:relative;}
+
+/* стиль блоков, вложенных в контейнер makeMeScrollable*/
+.part{
+    display:inline-block;
+    width:267px; height:200px;}
+
+/* рамка-кадр */
+.shot{
+    position:absolute;
+    z-index:3;}
+/* картинка */
+.photo{
+    /*mix-blend-mode: difference;*/
+    position:absolute;
+    z-index:2;}
+
+.embl{
+    width: 150px !important;
+    height: 150px !important;
+}
+
+section > :last-child, section:last-child, article > :last-child, article:last-child {
+    margin-bottom: 0 !important;
+
+}
+
+.clearfix:after, section:after {
+    content: ".";
+    display: inline !important;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 
 
+/*css news*/
 
 
+.ca-item h4 {
+    font-size: 18px !important;
+    text-align: left;
+    border-left: 10px solid #b0ccc6;
+    padding-left: 10px;
+    line-height: 24px;
+    margin: 10px;
+    /important;
+
+}
 
 
+.part img{
+    width: 267px;
+    height: 200px;
+
+}
 
 
+.nav>li>a {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Impact', fantasy;
 
+}
 
+.ca-more{
+    font-size: 16px;
+}
 

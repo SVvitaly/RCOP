@@ -59,9 +59,239 @@
       js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
       fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+
+  <meta charset="UTF-8">
+  <meta name="authoring-tool" content="Adobe_Animate_CC">
+  <title>index</title>
+  <!-- write your code here -->
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script>
+      (function (lib, img, cjs, ss, an) {
+          var p; // shortcut to reference prototypes
+          lib.webFontTxtInst = {};
+          var loadedTypekitCount = 0;
+          var loadedGoogleCount = 0;
+          var gFontsUpdateCacheList = [];
+          var tFontsUpdateCacheList = [];
+          lib.ssMetadata = [
+              {name:"index_atlas_", frames: [[0,402,197,234],[199,402,78,234],[0,0,400,400]]}
+          ];
+          lib.updateListCache = function (cacheList) {
+              for(var i = 0; i < cacheList.length; i++) {
+                  if(cacheList[i].cacheCanvas)
+                      cacheList[i].updateCache();
+              }
+          };
+          lib.addElementsToCache = function (textInst, cacheList) {
+              var cur = textInst;
+              while(cur != exportRoot) {
+                  if(cacheList.indexOf(cur) != -1)
+                      break;
+                  cur = cur.parent;
+              }
+              if(cur != exportRoot) {
+                  var cur2 = textInst;
+                  var index = cacheList.indexOf(cur);
+                  while(cur2 != cur) {
+                      cacheList.splice(index, 0, cur2);
+                      cur2 = cur2.parent;
+                      index++;
+                  }
+              }
+              else {
+                  cur = textInst;
+                  while(cur != exportRoot) {
+                      cacheList.push(cur);
+                      cur = cur.parent;
+                  }
+              }
+          };
+          lib.gfontAvailable = function(family, totalGoogleCount) {
+              lib.properties.webfonts[family] = true;
+              var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];
+              for(var f = 0; f < txtInst.length; ++f)
+                  lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);
+              loadedGoogleCount++;
+              if(loadedGoogleCount == totalGoogleCount) {
+                  lib.updateListCache(gFontsUpdateCacheList);
+              }
+          };
+          lib.tfontAvailable = function(family, totalTypekitCount) {
+              lib.properties.webfonts[family] = true;
+              var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];
+              for(var f = 0; f < txtInst.length; ++f)
+                  lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);
+              loadedTypekitCount++;
+              if(loadedTypekitCount == totalTypekitCount) {
+                  lib.updateListCache(tFontsUpdateCacheList);
+              }
+          };
+// symbols:
+          (lib.lev = function() {
+              this.spriteSheet = ss["index_atlas_"];
+              this.gotoAndStop(0);
+          }).prototype = p = new cjs.Sprite();
+          (lib.metla = function() {
+              this.spriteSheet = ss["index_atlas_"];
+              this.gotoAndStop(1);
+          }).prototype = p = new cjs.Sprite();
+          (lib.txt = function() {
+              this.spriteSheet = ss["index_atlas_"];
+              this.gotoAndStop(2);
+          }).prototype = p = new cjs.Sprite();
+// helper functions:
+          function mc_symbol_clone() {
+              var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+              clone.gotoAndStop(this.currentFrame);
+              clone.paused = this.paused;
+              clone.framerate = this.framerate;
+              return clone;
+          }
+          function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+              var prototype = cjs.extend(symbol, cjs.MovieClip);
+              prototype.clone = mc_symbol_clone;
+              prototype.nominalBounds = nominalBounds;
+              prototype.frameBounds = frameBounds;
+              return prototype;
+          }
+          (lib.Символ4 = function(mode,startPosition,loop) {
+              this.initialize(mode,startPosition,loop,{});
+              // Слой 1
+              this.instance = new lib.metla();
+              this.instance.parent = this;
+              this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+          }).prototype = getMCSymbolPrototype(lib.Символ4, new cjs.Rectangle(0,0,78,234), null);
+          (lib.Символ3 = function(mode,startPosition,loop) {
+              this.initialize(mode,startPosition,loop,{});
+              // Слой 1
+              this.instance = new lib.lev();
+              this.instance.parent = this;
+              this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+          }).prototype = getMCSymbolPrototype(lib.Символ3, new cjs.Rectangle(0,0,197,234), null);
+          (lib.Символ2 = function(mode,startPosition,loop) {
+              this.initialize(mode,startPosition,loop,{});
+              // Слой 1
+              this.instance = new lib.txt();
+              this.instance.parent = this;
+              this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+          }).prototype = getMCSymbolPrototype(lib.Символ2, new cjs.Rectangle(0,0,400,400), null);
+// stage content:
+          (lib.Безымянный1 = function(mode,startPosition,loop) {
+              this.initialize(mode,startPosition,loop,{});
+              // timeline functions:
+              this.frame_77 = function() {
+                  this.stop()
+              }
+              // actions tween:
+              this.timeline.addTween(cjs.Tween.get(this).wait(77).call(this.frame_77).wait(1));
+              // lev.png
+              this.instance = new lib.Символ3();
+              this.instance.parent = this;
+              this.instance.setTransform(297.5,219,1,1,0,0,0,98.5,117);
+              this.instance.alpha = 0;
+              this.timeline.addTween(cjs.Tween.get(this.instance).to({x:208.5,alpha:1},42).wait(36));
+              // metla.jpg
+              this.instance_1 = new lib.Символ4();
+              this.instance_1.parent = this;
+              this.instance_1.setTransform(39,183,1,1,0,0,0,39,117);
+              this.instance_1.alpha = 0;
+              this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:129,alpha:1},42).wait(36));
+              // txt.jpg
+              this.instance_2 = new lib.Символ2();
+              this.instance_2.parent = this;
+              this.instance_2.setTransform(200.1,200,0.95,0.95,45,0,0,200,199.8);
+              this.instance_2.alpha = 0;
+              this.instance_2._off = true;
+              this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(42).to({_off:false},0).to({regY:200,scaleX:1,scaleY:1,rotation:0,x:200,alpha:1},35).wait(1));
+          }).prototype = p = new cjs.MovieClip();
+          p.nominalBounds = new cjs.Rectangle(200,266,396,270);
+// library properties:
+          lib.properties = {
+              width: 400,
+              height: 400,
+              fps: 24,
+              color: "#FFFFFF",
+              opacity: 1.00,
+              webfonts: {},
+              manifest: [
+                  {src:"/images/index_atlas_.png", id:"index_atlas_"}
+              ],
+              preloads: []
+          };
+      })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{}, AdobeAn = AdobeAn||{});
+      var lib, images, createjs, ss, AdobeAn;
+  </script>
+  <script>
+      var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+      function init() {
+          canvas = document.getElementById("canvas");
+          anim_container = document.getElementById("animation_container");
+          dom_overlay_container = document.getElementById("dom_overlay_container");
+          images = images||{};
+          ss = ss||{};
+          var loader = new createjs.LoadQueue(false);
+          loader.addEventListener("fileload", handleFileLoad);
+          loader.addEventListener("complete", handleComplete);
+          loader.loadManifest(lib.properties.manifest);
+      }
+      function handleFileLoad(evt) {
+          if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+      }
+      function handleComplete(evt) {
+          //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+          var queue = evt.target;
+          var ssMetadata = lib.ssMetadata;
+          for(i=0; i<ssMetadata.length; i++) {
+              ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+          }
+          exportRoot = new lib.Безымянный1();
+          stage = new createjs.Stage(canvas);
+          stage.addChild(exportRoot);
+          //Registers the "tick" event listener.
+          fnStartAnimation = function() {
+              createjs.Ticker.setFPS(lib.properties.fps);
+              createjs.Ticker.addEventListener("tick", stage);
+          }
+          //Code to support hidpi screens and responsive scaling.
+          function makeResponsive(isResp, respDim, isScale, scaleType) {
+              var lastW, lastH, lastS=1;
+              window.addEventListener('resize', resizeCanvas);
+              resizeCanvas();
+              function resizeCanvas() {
+                  var w = lib.properties.width, h = lib.properties.height;
+                  var iw = window.innerWidth, ih=window.innerHeight;
+                  var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
+                  if(isResp) {
+                      if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {
+                          sRatio = lastS;
+                      }
+                      else if(!isScale) {
+                          if(iw<w || ih<h)
+                              sRatio = Math.min(xRatio, yRatio);
+                      }
+                      else if(scaleType==1) {
+                          sRatio = Math.min(xRatio, yRatio);
+                      }
+                      else if(scaleType==2) {
+                          sRatio = Math.max(xRatio, yRatio);
+                      }
+                  }
+                  canvas.width = w*pRatio*sRatio;
+                  canvas.height = h*pRatio*sRatio;
+                  canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';
+                  canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+                  stage.scaleX = pRatio*sRatio;
+                  stage.scaleY = pRatio*sRatio;
+                  lastW = iw; lastH = ih; lastS = sRatio;
+              }
+          }
+          makeResponsive(false,'both',false,1);
+          fnStartAnimation();
+      }
+  </script>
 </head>
 <body>
-<%= site_bar -%>
+<%= site_bar %>
 <div id="page_container">
   <header id="header1">
     <%= render "/refinery/header" -%>

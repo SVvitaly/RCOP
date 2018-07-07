@@ -1,32 +1,34 @@
 <!-- Header -->
-<div class="headerlocale">
-  <!--<div class="localeposition">-->
-  <div>
-    <nav class="localeposition">
-      <% ::Refinery::I18n.frontend_locales.each do |locale| %>
-          <%= link_to locale, refinery.url_for({locale: locale}), class: locale %>
-      <% end %>
-    </nav>
-  <!--</div>-->
-  <!--<div>-->
-    <ul class="icons otside">
-    <li><a href="https://www.facebook.com/zaslavlrowingcanal/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-    <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-    <!--<li><a href="#" class="icon fa-vk"><span class="label">Vkontakte</span></a></li>-->
-    </ul>
+
+<div class="demo-2">
+  <div class="headerlocale">
+    <!--<div class="localeposition">-->
+    <div class="localeposition">
+      <nav>
+        <% ::Refinery::I18n.frontend_locales.each do |locale| %>
+            <%= link_to locale, refinery.url_for({locale: locale}), class: locale %>
+        <% end %>
+      </nav>
+    </div>
   </div>
-</div>
-<div class="demo-2 backgroundfon">
-  <header>
-    <div>
-      <a class="bordernone headerEmblema" href="<%= t('home') %>"><img class="headerEmblemaimg" src="/images/Emblema.png"/></a>
-      <h1 style="padding-top: 1%"><a class="bordernone deepshadow" href="/" id="logo1">
-        <%= t('header_text') %></a></h1>
-    </div>
+  <div class="header-id">
+    <a class="headerEmblema" href="<%= t('home') %>">
+      <body onload="init();" style="margin:0px;">
+      <div id="animation_container" class="embl">
+        <canvas id="canvas" class="embl" width="200" height="200" style="position: absolute; display: block; "></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:200px; position: absolute; left: 0px; top: 0px; display: block;">
+        </div>
+      </div>
+      </body>
+    </a>
+    <h1 class="bordernone"><a href="/" id="logo1">
+      <%= t('header_text') %></a></h1>
+
     <div class="textBold">
-      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap { |p| p.dom_id = 'nav' }.to_html %>
+      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).tap {|p| p.dom_id = 'nav'}.to_html %>
     </div>
-  </header>
+  </div>
+
 </div>
 
 
