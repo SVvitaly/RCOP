@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170628205457) do
+ActiveRecord::Schema.define(version: 20181201101507) do
+
+  create_table "adverts", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.text     "text",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "email_settings", force: :cascade do |t|
+    t.string   "first_name",  limit: 255
+    t.string   "last_name",   limit: 255
+    t.string   "patronymic",  limit: 255
+    t.string   "email",       limit: 255
+    t.text     "text",        limit: 65535
+    t.string   "address",     limit: 255
+    t.string   "file",        limit: 255
+    t.string   "postal_code", limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title", limit: 255
@@ -234,6 +254,27 @@ ActiveRecord::Schema.define(version: 20170628205457) do
   end
 
   add_index "refinery_settings", ["name"], name: "index_refinery_settings_on_name", using: :btree
+
+  create_table "refinery_video_translations", force: :cascade do |t|
+    t.integer  "refinery_video_id", limit: 4,   null: false
+    t.string   "locale",            limit: 255, null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "title",             limit: 255
+    t.string   "video_key",         limit: 255
+  end
+
+  add_index "refinery_video_translations", ["locale"], name: "index_refinery_video_translations_on_locale", using: :btree
+  add_index "refinery_video_translations", ["refinery_video_id"], name: "index_refinery_video_translations_on_refinery_video_id", using: :btree
+
+  create_table "refinery_videos", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.string   "video_key",  limit: 255
+    t.integer  "draft",      limit: 4,   default: 1
+    t.integer  "position",   limit: 4
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "seo_meta", force: :cascade do |t|
     t.integer  "seo_meta_id",      limit: 4

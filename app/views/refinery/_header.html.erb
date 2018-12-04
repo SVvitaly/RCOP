@@ -1,16 +1,19 @@
 <!-- Header -->
 
 <div class="demo-2">
-  <div class="headerlocale">
-    <!--<div class="localeposition">-->
-    <div class="localeposition">
-      <nav>
-        <% ::Refinery::I18n.frontend_locales.each do |locale| %>
-            <%= link_to locale, refinery.url_for({locale: locale}), class: locale %>
-        <% end %>
-      </nav>
-    </div>
+  <div class = "email_right">
+    <a href="/email_settings/new" class="fa fa-envelope-o"> ЭЛЕКТРОННЫЕ ОБРАЩЕНИЯ</a>
   </div>
+<!--  <div class="headerlocale">-->
+<!--    <div class="localeposition">-->
+<!--    <div class="localeposition">-->
+<!--      <nav>-->
+        <%# ::Refinery::I18n.frontend_locales.each do |locale| %>
+            <%#= link_to locale, refinery.url_for({locale: locale}), class: locale %>
+        <%# end %>
+<!--      </nav>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="header-id">
     <a class="headerEmblema" href="<%= t('home') %>">
       <body onload="init();" style="margin:0px;">

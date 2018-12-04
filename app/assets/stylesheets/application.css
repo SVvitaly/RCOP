@@ -19,23 +19,26 @@
 
 /*Основные*/
 .backgroundfon{
+    display: block;
+    overflow: hidden;
     opacity: 1;
     background-image: url('/images/Фон/140520040155!.jpg');
-    background-attachment:fixed
+    /*background: dimgray;*/
+    background-repeat: no-repeat; /* Отменяем повторение фона *//*background-attachment:fixed;*/
+    background-size: cover; /* Современные браузеры */
 }
+
 .backgroundfonfooter{
     opacity: 1;
 }
-
-
 
 /* css for header*/
 .headerEmblema {
     display: inline;
     position: inherit;
     width: 100%;
-
 }
+
 .headerEmblema{
     padding-left: 1%;
     width: 150px;
@@ -47,13 +50,12 @@
     width: 100%;
 }
 
-
 #logo1{
     font-family: 'Impact', fantasy;
     color: #2ca1f1; /* Белый цвет текста */
     font-size: 1em; /* Размер надписи */
     letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: 400;
     text-decoration: none;
     text-shadow:
             -1px 1px 0 #4b3680;
@@ -225,6 +227,9 @@ body {
     color: black;
     text-align: center;
     background-image: url('/images/Фон/12.jpg');
+    /*background: dimgray;*/
+    background-repeat: no-repeat; /* Отменяем повторение фона *//*background-attachment:fixed;*/
+    background-size: cover; /* Современные браузеры */
 
 }
 
@@ -264,22 +269,25 @@ footer  h3{
     font-family: Times;
     text-align: left;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 36px;
     padding-top: 1%;
-    color: black;
+    color: black !important;
+    /*color: black;*/
     text-shadow: 0px 3px 0px #b2a98f,
                 0px 14px 10px rgba(0,0,0,0.15),
-
 }
 
+.ca-content-wrapper{
+    background: aliceblue !important;
+}
 .partner{
 
     text-transform: uppercase;
     font-family: Times;
     margin: 0;
     text-align: center;
-    font-weight: 600;
-    font-size: 50px;
+    font-weight: 400;
+    font-size: 36px;
     padding-top: 0%;
     color: black;
     text-shadow: 0px 3px 0px #b2a98f,
@@ -288,7 +296,8 @@ footer  h3{
 
 
 .leftimg {
-    width: 40%;
+    /*width: 40%;*/
+    height: auto;
     float:left; /* Выравнивание по левому краю */
     margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
 }
@@ -298,7 +307,7 @@ footer  h3{
 }
 
 .Honhomege a {
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 600;
 }
 
@@ -1351,7 +1360,7 @@ div.bloksportsmen:after {
 }
 
 .header-id {
-    padding-top: 3.25%;
+    padding-top: 1%;
     clear:both;
 }
 
@@ -1556,6 +1565,7 @@ a.photoservise:hover img{
 
 .ca-item-main{
     margin-left: 2%;
+    background: aliceblue !important;
     /*background: transparent !important;*/
 }
 
@@ -1639,7 +1649,7 @@ section > :last-child, section:last-child, article > :last-child, article:last-c
 
 .nav>li>a {
     color: #111111;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Impact', fantasy;
 
@@ -1650,4 +1660,52 @@ section > :last-child, section:last-child, article > :last-child, article:last-c
 }
 
 
+.email_setting_form{
+    /*width: 95%;*/
+    border: 3px solid blue;
+    background: mintcream;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
 
+    padding: 1%  1% 1% 1% ;
+
+
+}
+
+.email_setting_form label {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Impact', fantasy;
+
+}
+.emails_setting_div{
+    margin-bottom: 1%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.crumb-trail{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0.5% 0 2% 0;
+    font-family: 'Impact', fantasy;
+}
+
+.email_text{
+    font-weight: bold;
+}
+.email_right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*background-color: #FFF9AE;*/
+    /*visibility: hidden;*/
+}
+
+html input[type=submit]{
+    background: #0612ff !important;
+}
