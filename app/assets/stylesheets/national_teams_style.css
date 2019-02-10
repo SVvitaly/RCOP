@@ -3,7 +3,7 @@
     height: 100%;
     overflow: hidden;
     padding: 10px;
-    background: #e7e6d4;
+    background: #c2e4e7;
     /*border: 3px dashed #645a4e;*/
 
 }
@@ -38,8 +38,9 @@
 
 .card_results{
     top: 1%;
+    padding-left: 2%;
     margin: 0;
-    width: 30%;
+    width: 35%;
     float: left;
     font-size: 20px;
 }
