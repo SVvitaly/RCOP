@@ -1741,7 +1741,8 @@ html input[type=submit]{
 }
 
 .leadh1 img{
-    width: 100%;
+    /*width: auto;*/
+    text-align:center
 
 }
 

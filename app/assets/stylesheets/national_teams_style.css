@@ -1,0 +1,54 @@
+.cards{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    background: #e7e6d4;
+    /*border: 3px dashed #645a4e;*/
+
+}
+
+.card_nat_sp{
+    margin: 1%;
+    width: 48%;
+    float: left;
+    top: 10px;
+    background: #ffffff;
+    /*border: 3px dashed #312a22;*/
+}
+
+.card_image{
+    top: 1%;
+    margin: 0;
+    width: 30%;
+    float: left;
+}
+.card_image img{
+    width: 100%;
+}
+
+.card_info{
+    top: 1%;
+    margin: 0;
+    width: 30%;
+    float: left;
+    font-size: 20px;
+
+}
+
+.card_results{
+    top: 1%;
+    margin: 0;
+    width: 30%;
+    float: left;
+    font-size: 20px;
+}
+
+.name{
+    text-align: center;
+    margin: 2%;
+}
+
+.all_card{
+    margin-top: 3%;
+}

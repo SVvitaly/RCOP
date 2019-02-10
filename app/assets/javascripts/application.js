@@ -19,4 +19,5 @@
 //= require skel.min
 //= require util
 //= require main
+//= require footer_carousel
 //= require_tree .
