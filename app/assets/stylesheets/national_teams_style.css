@@ -10,7 +10,9 @@
 
 .card_nat_sp{
     margin: 1%;
+    overflow: auto;
     width: 48%;
+    height: 400px;
     float: left;
     top: 10px;
     background: #ffffff;
@@ -24,7 +26,11 @@
     float: left;
 }
 .card_image img{
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .card_info{
