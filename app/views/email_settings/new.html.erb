@@ -1,62 +1,41 @@
-
-
-<%# if @email_setting.errors.any? %>
-<!--  <div id="error_explanation">-->
-<!--    <h2>-->
-      <%#= pluralize(@email_setting.errors.count, "error") %>
-<!--    </h2>-->
-<!--    <ul>-->
-      <%# @email_setting.errors.full_messages.each do |msg| %>
-<!--        <li><%#= msg %></li>-->
-      <%# end %>
-<!--    </ul>-->
-<!--  </div>-->
-<%# end %>
-
-
   <%= form_for @email_setting, html: {class: "email_setting_form"} do |f| %>
     <h1 class="crumb-trail">
       Электронное обращение для физических лиц
     </h1>
     <tbody>
     <div class="emails_setting_div">
-      <p class="email_text"><%= f.label :first_name, 'Имя *' %></p>
+      <p class="email_text"><%= f.label :first_name, t('email_message.first_name') %></p>
       <p><%= f.text_field :first_name %></p>
     </div>
 
     <div class="emails_setting_div">
-      <p><%= f.label :last_name, 'Фамилия *' %></p>
+      <p><%= f.label :last_name, t('email_message.last_name') %></p>
       <p><%= f.text_field :last_name %></p>
     </div>
 
     <div class="emails_setting_div">
-      <p><%= f.label :patronymic, 'Отчество *' %></p>
+      <p><%= f.label :patronymic, t('email_message.patronymic') %></p>
       <p><%= f.text_field :patronymic %></p>
     </div>
 
     <div class="emails_setting_div">
-      <p><%= f.label :email, 'E-mail *' %></p>
+      <p><%= f.label :email, t('email_message.email') %></p>
       <p><%= f.text_field :email %></p>
     </div>
 
     <div class="emails_setting_div">
-      <p><%= f.label :address, 'Адрес места жительства (место пребывания)*' %></p>
+      <p><%= f.label :address, t('email_message.adress') %></p>
       <p><%= f.text_field :address %></p>
     </div>
 
     <div class="emails_setting_div">
-      <p><%= f.label :text, 'Текст обращения (до 2000 символов) *' %></p>
+      <p><%= f.label :text, t('email_message.text') %></p>
       <p><%= f.text_area :text %></p>
     </div>
-
-<!--    <div class="emails_setting_div">-->
-<!--      <p><%#= f.label :address %></p>-->
-<!--      <p><%#= f.file_field :address %></p>-->
-<!--    </div>-->
-    <h3>* поля обязательные для заполнения</h3>
-    <h4>О порядке рассмотрения обращений граждан, можете ознакомится на сайте <a href="http://www.mst.by/ru/poryadok_rassmotreniya-ru/">Минестерства спорта и туризма Республики Беларусь</a>.</h4>
+    <h3><%= t('email_message.mandatory_fields') %></h3>
+    <h4><%= t('email_message.all_information') %><a href="http://www.mst.by/ru/poryadok_rassmotreniya-ru/"><%= t('email_message.department') %></a></h4>
     <div class="btn" >
-    <%= f.submit 'Отправить' %>
+    <%= f.submit t('email_message.send') %>
     </div>
 
 

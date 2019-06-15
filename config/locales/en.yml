@@ -31,5 +31,14 @@ en:
       default: "%d.%m.%Y"
       short: "%b %d"
       long: "%B %d, %Y"
-
-
+  email_message:
+    first_name: "First name *"
+    last_name: "Last name *"
+    patronymic: "Patronymic *"
+    adress: "Adress *"
+    email: "Email *"
+    text: "Message text (up to 2000 characters) *"
+    mandatory_fields: "* Mandatory fields"
+    send: "Send"
+    all_information: "On the order of consideration of citizens, can be found on the website"
+    department: "Ministry of sport and tourism"

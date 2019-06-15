@@ -1342,7 +1342,7 @@ div.bloksportsmen:after {
 .en{
     font-weight: 700;
     color: #33352f;
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
     font-family: 'Impact', fantasy;
     text-transform: uppercase;
@@ -1356,7 +1356,7 @@ div.bloksportsmen:after {
 .ru{
     font-weight: 700;
     color: #33352f;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Impact', fantasy;
     text-transform: uppercase;
     text-align: left;
@@ -1458,8 +1458,8 @@ a.photoservise:hover img{
 .leadershipBlable{
     width: 35%;
     float: left;
-
 }
+
 .leadershipBlable1{
     width: 100%;
     display: inline-block;
@@ -1468,6 +1468,7 @@ a.photoservise:hover img{
     margin-left: 5%;
     width: 100%;
     position: inherit;
+    border-radius: 10%;
 }
 
 .leadershipBp {
