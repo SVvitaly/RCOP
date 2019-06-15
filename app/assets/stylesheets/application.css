@@ -1342,7 +1342,7 @@ div.bloksportsmen:after {
 .en{
     font-weight: 700;
     color: #33352f;
-    font-size: 2em;
+    font-size: 1em;
     text-align: left;
     font-family: 'Impact', fantasy;
     text-transform: uppercase;
@@ -1356,7 +1356,7 @@ div.bloksportsmen:after {
 .ru{
     font-weight: 700;
     color: #33352f;
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'Impact', fantasy;
     text-transform: uppercase;
     text-align: left;
@@ -1458,6 +1458,10 @@ a.photoservise:hover img{
 .leadershipBlable{
     width: 35%;
     float: left;
+}
+
+.leadershipBlable img{
+    border-radius: 10%;
 }
 
 .leadershipBlable1{
