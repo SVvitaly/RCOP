@@ -6,6 +6,11 @@
   <!--[if lte IE 8]><%= stylesheet_link_tag "ie8" %><![endif]-->
   <%= render "/refinery/head" %>
   <%= render "/refinery/javascripts" %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Latest compiled and minified JavaScript -->
@@ -43,15 +48,12 @@
     <%= render "/refinery/header" %>
   </header>
   <div class="backgroundfon">
-    <div id="foto_page" class="foto_gallery">
       <%= yield %>
-    </div>
   </div>
   <footer>
     <%= render "/refinery/footer" -%>
   </footer>
 </div>
-<%#= javascript_include_tag "application" %>
 <!--[if lte IE 8]><%= javascript_tag('ie/respond') %></script><![endif]-->
 </body>
 </html>
