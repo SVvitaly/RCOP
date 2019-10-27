@@ -1763,3 +1763,8 @@ html input[type=submit]{
     text-decoration: none;
     border: none;
 }
+
+.fotorama{
+    padding-top: 5%;
+    padding-left: 25%;
+}
