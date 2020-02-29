@@ -47,7 +47,7 @@ group :development do
   gem 'capistrano-rvm'
 end
 
-gem 'rake', '11.3.0'
+gem 'rake', '13.0.1'
 gem 'minitest', '5.9.1'
 gem 'coffee-script-source', '1.11.1'
 gem 'concurrent-ruby', '1.0.2'
